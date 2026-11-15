@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-primary: #00D09E;
+    --color-primary-light: #DFF7E2;
+    --color-bg-mint: #F1FFF3;
+    --color-dark-pine: #052224;
+    --color-muted-pine: #093030;
+    --color-cyprus: #0E3E3E;
+    --color-blue-ocean: #0068FF;
+    --color-blue-vivid: #3299FF;
+    --color-blue-light: #6DB6FE;
+  }
+
+  body {
+    background-color: #0d1514;
+    color: #052224;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom scrollbar for horizontal containers */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Glass & Card styles */
+.finwise-card {
+  background: #F1FFF3;
+  border-radius: 28px;
+  box-shadow: 0 10px 30px -5px rgba(0, 208, 158, 0.08);
+}
+
+.finwise-mint-gradient {
+  background: linear-gradient(135deg, #00D09E 0%, #00B386 100%);
+}
